@@ -1063,3 +1063,12 @@ Processing by SongsController#index as HTML
   [1m[35mCACHE (0.1ms)[0m  SELECT "artists"."id" FROM "artists"
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists"."id" FROM "artists"[0m
   [1m[35mCACHE (0.0ms)[0m  SELECT "artists"."id" FROM "artists"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "artists"."id" FROM "artists"[0m
+Redirected to http://165.227.16.205:43707/artists
+Completed 302 Found in 215246ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/artists/1/songs/100" for 110.54.216.248 at 2018-07-17 06:20:50 +0000
+Cannot render console from 110.54.216.248! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#show as HTML
+  Parameters: {"artist_id"=>"1", "id"=>"100"}
