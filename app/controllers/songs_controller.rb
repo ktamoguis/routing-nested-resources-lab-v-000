@@ -6,7 +6,7 @@ class SongsController < ApplicationController
   def index
     if params[:artist_id]
       binding.pry
-      if Artist.pluck(:id).index(params[:artist_id]).nil?
+      if Artist.pluck(:id).index(params[:artist_id].to_i).nil?
         redirect_to artists_path, alert: "Artist not found"
       else
         @songs = Artist.find(params[:artist_id])
